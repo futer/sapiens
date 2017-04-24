@@ -1,0 +1,91 @@
+<!--
+  Author: Tomasz Jeznach,
+  For: recruitment process,
+  Goal: Made 3 elements with feature,
+  Time: ASAP
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sapiens test work</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <body>
+
+      <section class="firstElement">
+        <div class="container">
+          <header>
+            <h1>Welcome, step by step you will see the project.</h1>
+            <h3>Use arrow or just scroll down the page</h2>
+          </header>
+          <a href= "#secondElement" class="arrowDown"></a>
+        </div>
+      </section>
+
+      <section class="secondElement" id="secondElement">
+        <div class="container">
+          <header>
+            <h2>Generate graph</h2>
+          </header>
+          <div class="row">
+
+            <div class="inputValueContainer">
+
+              <form action="javascript:getValue()">
+                <div class="row">
+                  <label for="year1">Start year</label>
+                  <input type="text" name="year1" value="" id="startYear">
+                </div>
+
+                <div class="row">
+                  <label for="year2">End year</label>
+                  <input type="text" name="year2" value="" id="endYear">
+                </div>
+
+                <div class="row">
+                  <label for="value1">Start value</label>
+                  <input type="text" name="value1" value="" id="startValue">
+                </div>
+
+                <div class="row">
+                  <label for="value2">Middle value</label>
+                  <input type="text" name="value2" value="" id="middleValue">
+                </div>
+
+                <div class="row">
+                  <label for="value3">End value</label>
+                  <input type="text" name="value3" value="" id="endValue">
+                </div>
+
+                <p class="errorText" id="errorCheck"></p>
+
+                <button class="generateButton" type="submit" name="submit">Generate graph</button>
+
+              </form>
+
+            </div>
+
+            <div class="generateGraphContainter">
+              <canvas id="myChart" width="400" height="270"></canvas>
+            </div>
+
+          </div>
+
+          <a href= "#thirdElement" class="arrowDown"></a>
+
+        </div>
+      </section>
+
+      <section class="thirdElement" id="thirdElement">
+        <div class="container">
+          <header></header>
+          C
+        </div>
+      </section>
+
+    <script src="./assets/js/Chart.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

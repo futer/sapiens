@@ -1,0 +1,155 @@
+/* import section */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* End import section */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 48px;}
+h3 { font-size: 32px;}
+
+section {
+
+}
+
+.firstElement {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url('/assets/images/workingdesk.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondElement {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/images/thirddesk.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.thirdElement {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/images/mathdesk.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 960px;
+  padding: 15px 15px;
+}
+
+
+.firstElement header h1{
+  padding: 50px;
+  color: #BD2852;
+  border: 2px solid #FFF;
+}
+
+.firstElement header h1:hover{
+  background: #FFF;
+}
+
+.firstElement header h3{
+    margin-top: 20px;
+    color: #BD2852;
+}
+
+.secondElement header h2{
+  padding: 50px;
+  color: #c72425;
+}
+
+.inputValueContainer, .generateGraphContainter {
+  display: inline-block;
+  width: 49%;
+  float: left;
+  min-height: 270px;
+}
+
+canvas {
+  padding: 0 20px;
+}
+
+.arrowDown {
+  display: block;
+  margin: 50px auto;
+  width: 0;
+  height: 0;
+  content: '';
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #FFF;
+}
+
+.arrowDown:hover {
+  border-top: 40px solid #BD2852;
+}
+
+.row {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.inputValueContainer label {
+  color: #FFF;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.inputValueContainer input {
+  width: 60%;
+  padding: 10px;
+  border: solid 3px #c9c9c9;
+  float: right;
+}
+
+.generateButton {
+  margin-top: 10px;
+  width: 100%;
+  float: right;
+  border: 0;
+  color: #FFFFFF;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 25px 10px;
+  font-size: 15px;
+  background-color: #c72425;
+}
+
+.generateButton:hover {
+  background-color: #ED5A5A;
+}
+
+.errorText {
+  text-align: center;
+  color: #BD2852;
+  margin-top: 5px;
+
+}
