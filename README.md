@@ -1,11 +1,11 @@
 # sapiens
 
 # How run by the best way :
-  You must have installed NPM (Node Package Menager)
-  Via NPM installed live-server (npm install -g live-server)
-  Clone repo
-  In the folder run command line and write :
-  # live-server
+ ## You must have installed NPM (Node Package Menager)
+ ## Via NPM installed live-server (npm install -g live-server)
+ ## Clone repo
+ ## In the folder run command line and write :
+ ## live-server
   
 # Subject:
   ## Write a webpage where is three element (one triangel, two rectangle)
