@@ -31,7 +31,7 @@ function generateGraph(sY, eY, sV, mV, eV) {
       datasets: [{
         label: 'Value',
         data: [sV,mV,eV],
-        backgroundColor: "rgba(153,255,51,0.4)"
+        backgroundColor: "#c72425"
       }]
     },
     options: {
@@ -46,3 +46,23 @@ function generateGraph(sY, eY, sV, mV, eV) {
         }
   });
 }
+
+function move(event) {
+    var key = event.keyCode,
+        chrId = document.getElementById('panda'),
+        chr = {
+            leftright: function (speed) {
+                var x = parseInt(getComputedStyle(chrId).left);
+                if (key == 37) {
+                    x -= speed;
+                } else if (key == 39) {
+                    x += speed;
+                }
+
+                return x;
+            }
+        };
+    chrId.style.left = (chr.leftright(100)) + "px";
+}
+
+document.addEventListener('keydown', move);

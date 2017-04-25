@@ -2,60 +2,53 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 /* End import section */
 
+/* Reset margin and padding for browser*/
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+/* End Reset margin and padding for browser*/
 
-h1,h2,h3,h4 {
+/* Create standard value for elements */
+h1,h2,h3 {
   text-align: center;
   text-transform: uppercase;
 }
 
 h1 { font-size: 4em; }
-h2 { font-size: 48px;}
-h3 { font-size: 32px;}
+h2 { font-size: 3em;}
+h3 { font-size: 2em;}
 
-section {
+/* End standard value for elements */
 
+.firstElement, .secondElement, .thirdElement {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .firstElement {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  align-items: center;
   background: url('/assets/images/workingdesk.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .secondElement {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
   background: url('/assets/images/thirddesk.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .thirdElement {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
   background: url('/assets/images/mathdesk.jpg') no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 
 .container {
@@ -64,9 +57,12 @@ section {
 }
 
 
-.firstElement header h1{
+.firstElement header h1, .secondElement header h1, .thirdElement header h1{
   padding: 50px;
   color: #BD2852;
+}
+
+.firstElement header h1{
   border: 2px solid #FFF;
 }
 
@@ -80,7 +76,6 @@ section {
 }
 
 .secondElement header h2{
-  padding: 50px;
   color: #c72425;
 }
 
@@ -149,7 +144,29 @@ canvas {
 
 .errorText {
   text-align: center;
-  color: #BD2852;
+  color: #FFF;
   margin-top: 5px;
+}
 
+.pandaChar {
+  transition-duration: .5s;
+  background: url('/assets/images/panda.gif') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+}
+
+footer{
+  color: #FFF;
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 45px;
 }
